@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<!-- Kendri Tatis 100263465 -->
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nocciola Resurge</title>
+    <link rel="icon" href="images/logo.png">
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&family=Pacifico&family=Roboto+Mono:wght@400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <div id="preloader" class="preloader">
+        <div class="glitch-wrapper">
+            <div class="glitch" data-text="Nocciola Digital">Nocciola Digital</div>
+            <div class="glitch" data-text="Resurrecting...">Resurrecting...</div>
+        </div>
+        <p>Cargando...</p>
+    </div>
+
+    <div id="popup" class="popup">
+        <div class="popup-content">
+            <span class="close-button">&times;</span>
+            <h2>El Misterio Digital</h2>
+            <p>¡Atención, clientes y amigos de Nocciola!</p>
+            <p>Un extraño fenómeno ha envuelto a nuestra empresa. De un momento a otro, nuestra presencia en línea ha desaparecido. Nuestras redes sociales borradas, nuestra web inexistente... ¡Un misterio digital sin precedentes!</p>
+            <p>Un mensaje encriptado nos desafía:</p>
+            <blockquote class="mensaje-misterio">
+                "Tu negocio ha sido borrado de la existencia digital. Si quieres recuperarlo, deberás reinventarlo. Usa la tecnología, la creatividad y tu ingenio para traerlo de vuelta."
+            </blockquote>
+            <p>¡Estamos listos para el desafío! Misión:</p>
+            <ul>
+                <li>Reconstruir nuestra presencia digital desde cero.</li>
+                <li>Agregar funciones innovadoras para ser más fuertes.</li>
+                <li>Diseñar una identidad visual única.</li>
+                <li>Crear un mensaje impactante para celebrar nuestra "resurrección".</li>
+            </ul>
+            <p>¡Prepárense para la nueva era de Nocciola!</p>
+        </div>
+    </div>
+
+    <header class="main-header">
+        <div class="logo">
+            <img src="images/logo.png" alt="Logo Nocciola Resurge">
+        </div>
+        <nav>
+            <ul>
+                <li><a href="index.html" class="nav-link active">Inicio</a></li>
+                <li><a href="menu.html" class="nav-link">Menú</a></li>
+                <li><a href="historia.html" class="nav-link">Historia del Misterio</a></li>
+                <li><a href="servicios.html" class="nav-link">Servicios</a></li> <!-- Texto modificado -->
+                <li><a href="contacto.html" class="nav-link">Contacto</a></li>
+                <li><a href="#" id="modo-oscuro-toggle" class="nav-link">Modo Oscuro</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main class="container">
+        <section class="hero-section">
+            <div class="hero-text">
+                <h1>Nocciola Digital</h1>
+                <p class="subtitle">Renacida de las cenizas digitales</p>
+                <a href="#servicios" class="cta-button">Descubre nuestros nuevos postres</a>
+            </div>
+            <div class="hero-image">
+                <img src="images/hero-image.png" alt="Postres Nocciola">
+            </div>
+        </section>
+
+        <section id="servicios" class="servicios-section">
+            <h2>Nuestros Deliciosos Servicios</h2>
+            <div class="servicio-card">
+                <img src="images/postre1.png" alt="Pastel de Chocolate">
+                <h3>Pastel "Phoenix" de Chocolate</h3>
+                <p>Un clásico que renace con un sabor irresistible. ¡Perfecto para celebrar cualquier ocasión!</p>
+            </div>
+            <div class="servicio-card">
+                <img src="images/postre2.png" alt="Tarta de Frutas">
+                <h3>Tarta "Glitch" de Frutas Frescas</h3>
+                <p>Una explosión de color y sabor, con frutas de temporada y una base crujiente.</p>
+            </div>
+            <div class="servicio-card">
+                <img src="images/postre3.png" alt="Macarons">
+                <h3>Macarons "Pixelados"</h3>
+                <p>Pequeñas joyas de sabor en una variedad de colores vibrantes, con rellenos sorprendentes.</p>
+            </div>
+        </section>
+
+        <section class="about-section">
+            <h2>Nuestra Resurrección</h2>
+            <p>Tras el enigmático incidente digital, hemos aprovechado la oportunidad para reinventarnos. Hemos adoptado nuevas tecnologías y un diseño fresco para ofrecerte una experiencia aún más dulce y segura. ¡Nocciola está de vuelta, más fuerte y deliciosa que nunca!</p>
+            <a href="historia.html" class="cta-button secondary">Lee nuestra historia completa</a>
+        </section>
+    </main>
+
+    <footer class="main-footer">
+        <div class="social-links">
+            <a href="https://www.facebook.com/NocciolaRD/" target="_blank" rel="noopener" aria-label="Facebook">FB</a>
+            <a href="https://www.instagram.com/nocciolard/" target="_blank" rel="noopener" aria-label="Instagram">IG</a>
+            <a href="#" aria-label="Twitter">TW</a>
+        </div>
+    </footer>
+
+    <button id="chatbot-launcher" type="button" aria-label="Abrir chat con Nocci"><img src="images/logo.png" alt="">Chatea con Nocci</button>
+    <div id="chatbot-container" class="collapsed" role="dialog" aria-label="Chat con Nocci">
+        <div id="chatbot-header">
+            <img class="chat-avatar" src="images/logo.png" alt="">
+            <div class="chatbot-title">Nocci<small>Asistente virtual de Nocciola</small></div>
+            <button id="chatbot-toggle" class="chatbot-toggle-btn" type="button" aria-label="Cerrar chat">&times;</button>
+        </div>
+        <div id="chatbot-messages" aria-live="polite"></div>
+        <div id="chatbot-chips"></div>
+        <form id="chatbot-input-area" autocomplete="off">
+            <input type="text" id="chatbot-input" placeholder="Escribe tu mensaje..." aria-label="Mensaje">
+            <button id="chatbot-send" type="submit">Enviar</button>
+        </form>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

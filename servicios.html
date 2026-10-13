@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<!-- Kendri Tatis 100263465 -->
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Servicios - Nocciola Digital</title>
+    <link rel="icon" href="images/logo.png">
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&family=Pacifico&family=Roboto+Mono:wght@400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header class="main-header">
+        <div class="logo">
+            <img src="images/logo.png" alt="Logo Nocciola Resurge">
+        </div>
+        <nav>
+            <ul>
+                <li><a href="index.html" class="nav-link">Inicio</a></li>
+                <li><a href="menu.html" class="nav-link">Menú</a></li>
+                <li><a href="historia.html" class="nav-link">Historia del Misterio</a></li>
+                <li><a href="servicios.html" class="nav-link active">Servicios</a></li> <!-- Texto modificado y clase active -->
+                <li><a href="contacto.html" class="nav-link">Contacto</a></li>
+                <li><a href="#" id="modo-oscuro-toggle" class="nav-link">Modo Oscuro</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main class="container">
+        <section class="servicios-detallados-section">
+            <h1>Nuestra Carta Reinventada</h1>
+            <p class="intro-text">¡Descubre las delicias que hemos preparado para ti en esta nueva era de Nocciola Digital! Cada postre es una obra maestra creada con ingredientes de la más alta calidad y un toque de magia.</p>
+
+            <div class="servicio-item">
+                <img src="images/postre1.png" alt="Pastel Phoenix de Chocolate">
+                <div class="servicio-info">
+                    <h2>Pastel "Phoenix" de Chocolate</h2>
+                    <p class="precio">$350.00</p>
+                    <p>Un bizcocho de chocolate intenso y húmedo, relleno de ganache de chocolate y cubierto con un glaseado brillante que evoca las llamas del ave fénix. ¡Un renacer de sabor!</p>
+                    <button class="cta-button">Pedir Ahora</button>
+                </div>
+            </div>
+
+            <div class="servicio-item reverse">
+                <img src="images/postre2.png" alt="Tarta Glitch de Frutas Frescas">
+                <div class="servicio-info">
+                    <h2>Tarta "Glitch" de Frutas Frescas</h2>
+                    <p class="precio">$300.00</p>
+                    <p>Una base de masa quebrada crujiente, rellena de crema pastelera ligera y coronada con una vibrante y caótica selección de frutas de temporada. El glitch perfecto para tus sentidos.</p>
+                    <button class="cta-button">Pedir Ahora</button>
+                </div>
+            </div>
+
+            <div class="servicio-item">
+                <img src="images/postre3.png" alt="Macarons Pixelados">
+                <div class="servicio-info">
+                    <h2>Macarons "Pixelados"</h2>
+                    <p class="precio">$180.00 (por 6)</p>
+                    <p>Una explosión de color y sabor en cada bocado. Estos macarons vienen en una paleta de colores retro y vibrantes, con rellenos sorpresa como frambuesa ácida, limón eléctrico y menta chispeante.</p>
+                    <button class="cta-button">Pedir Ahora</button>
+                </div>
+            </div>
+
+            <div class="servicio-item reverse">
+                <img src="images/postre4.png" alt="Cheesecake Nebulosa">
+                <div class="servicio-info">
+                    <h2>Cheesecake "Nebulosa"</h2>
+                    <p class="precio">$400.00</p>
+                    <p>Un cheesecake cremoso con un remolino de frutos rojos y un toque de vainilla, decorado con un espolvoreado de cacao que simula una noche estrellada. ¡Viaja a otra galaxia con cada cucharada!</p>
+                    <button class="cta-button">Pedir Ahora</button>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="main-footer">
+        <div class="social-links">
+            <a href="https://www.facebook.com/NocciolaRD/" target="_blank" rel="noopener" aria-label="Facebook">FB</a>
+            <a href="https://www.instagram.com/nocciolard/" target="_blank" rel="noopener" aria-label="Instagram">IG</a>
+            <a href="#" aria-label="Twitter">TW</a>
+        </div>
+    </footer>
+
+     <button id="chatbot-launcher" type="button" aria-label="Abrir chat con Nocci"><img src="images/logo.png" alt="">Chatea con Nocci</button>
+    <div id="chatbot-container" class="collapsed" role="dialog" aria-label="Chat con Nocci">
+        <div id="chatbot-header">
+            <img class="chat-avatar" src="images/logo.png" alt="">
+            <div class="chatbot-title">Nocci<small>Asistente virtual de Nocciola</small></div>
+            <button id="chatbot-toggle" class="chatbot-toggle-btn" type="button" aria-label="Cerrar chat">&times;</button>
+        </div>
+        <div id="chatbot-messages" aria-live="polite"></div>
+        <div id="chatbot-chips"></div>
+        <form id="chatbot-input-area" autocomplete="off">
+            <input type="text" id="chatbot-input" placeholder="Escribe tu mensaje..." aria-label="Mensaje">
+            <button id="chatbot-send" type="submit">Enviar</button>
+        </form>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

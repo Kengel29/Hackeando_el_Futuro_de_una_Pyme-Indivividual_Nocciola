@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<!-- Kendri Tatis 100263465 -->
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Historia del Misterio - Nocciola Digital</title>
+    <link rel="icon" href="images/logo.png">
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&family=Pacifico&family=Roboto+Mono:wght@400;700&display=swap" rel="stylesheet">
+</head>
+<body class="historia">
+    <header class="main-header">
+        <div class="logo">
+            <img src="images/logo.png" alt="Logo Nocciola Resurge">
+        </div>
+        <nav>
+            <ul>
+                <li><a href="index.html" class="nav-link">Inicio</a></li>
+                <li><a href="menu.html" class="nav-link">Menú</a></li>
+                <li><a href="historia.html" class="nav-link active">Historia del Misterio</a></li>
+                <li><a href="servicios.html" class="nav-link">Servicios</a></li> <!-- Texto modificado -->
+                <li><a href="contacto.html" class="nav-link">Contacto</a></li>
+                <li><a href="#" id="modo-oscuro-toggle" class="nav-link">Modo Oscuro</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main class="container">
+        <section class="story-section">
+            <h1>La Desaparición: Un Misterio Digital</h1>
+            <p class="intro-text">Todo comenzó una mañana aparentemente normal. El equipo de Nocciola Digital llegó a la oficina y se encontró con un escenario desolador: la página web no cargaba, las redes sociales habían sido borradas y los correos de clientes indicaban que ya no nos encontraban en línea. El pánico inicial dio paso a la intriga cuando encontramos un enigmático USB.</p>
+
+            <div class="incident-evidence">
+                <h2>Pruebas del Incidente</h2>
+                <div class="evidence-item">
+                    <h3>Mensaje del USB</h3>
+                    <blockquote class="mensaje-misterio">
+                        "Tu negocio ha sido borrado de la existencia digital. Si quieres recuperarlo, deberás reinventarlo. Usa la tecnología, la creatividad y tu ingenio para traerlo de vuelta."
+                    </blockquote>
+                    <p>El mensaje era claro: estábamos ante un ataque digital sin precedentes, pero también ante una oportunidad de transformación.</p>
+                </div>
+                <div class="evidence-item glitch-effect">
+                    <h3>Captura de Pantalla (Corrupta)</h3>
+                    <img src="images/corrupt-screenshot.png" alt="Captura de pantalla corrupta">
+                    <p>Intentamos recuperar datos, pero muchos archivos parecían dañados, con artefactos visuales que recordaban a un "glitch".</p>
+                </div>
+                <div class="evidence-item">
+                    <h3>Registro de Red (Fragmentado)</h3>
+                    <p>Los registros de nuestra red interna mostraban picos de actividad inusuales antes de la desconexión total. Los datos recuperados estaban incompletos, como si alguien hubiera borrado las huellas.</p>
+                </div>
+            </div>
+
+            <h2>Nuestro Renacimiento</h2>
+            <p>Este evento nos obligó a mirar más allá. Decidimos no solo restaurar, sino <strong>reinventar</strong> Nocciola Digital. Aprovechamos para:</p>
+            <ul>
+                <li><strong>Renovar nuestra Identidad Visual:</strong> Creamos un logo y una estética que reflejan nuestra resiliencia y dulzura.</li>
+                <li><strong>Implementar Medidas de Seguridad Avanzadas:</strong> Fortalecimos nuestra infraestructura digital para prevenir futuros incidentes.</li>
+                <li><strong>Innovar en Nuestros Productos:</strong> Lanzamos nuevas creaciones inspiradas en nuestra "resurrección" digital, como el pastel "Phoenix".</li>
+                <li><strong>Mejorar la Experiencia del Cliente:</strong> Implementamos herramientas como nuestro asistente virtual para una atención más cercana y eficiente.</li>
+            </ul>
+            <p>La historia de Nocciola Digital es ahora una de adversidad superada y de un futuro digitalmente dulce y seguro. ¡Gracias por ser parte de nuestro renacer!</p>
+            <a href="servicios.html" class="cta-button">Ver nuestros deliciosos servicios</a>
+        </section>
+    </main>
+
+    <footer class="main-footer">
+        <div class="social-links">
+            <a href="https://www.facebook.com/NocciolaRD/" target="_blank" rel="noopener" aria-label="Facebook">FB</a>
+            <a href="https://www.instagram.com/nocciolard/" target="_blank" rel="noopener" aria-label="Instagram">IG</a>
+            <a href="#" aria-label="Twitter">TW</a>
+        </div>
+    </footer>
+
+     <button id="chatbot-launcher" type="button" aria-label="Abrir chat con Nocci"><img src="images/logo.png" alt="">Chatea con Nocci</button>
+    <div id="chatbot-container" class="collapsed" role="dialog" aria-label="Chat con Nocci">
+        <div id="chatbot-header">
+            <img class="chat-avatar" src="images/logo.png" alt="">
+            <div class="chatbot-title">Nocci<small>Asistente virtual de Nocciola</small></div>
+            <button id="chatbot-toggle" class="chatbot-toggle-btn" type="button" aria-label="Cerrar chat">&times;</button>
+        </div>
+        <div id="chatbot-messages" aria-live="polite"></div>
+        <div id="chatbot-chips"></div>
+        <form id="chatbot-input-area" autocomplete="off">
+            <input type="text" id="chatbot-input" placeholder="Escribe tu mensaje..." aria-label="Mensaje">
+            <button id="chatbot-send" type="submit">Enviar</button>
+        </form>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
